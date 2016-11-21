@@ -23,6 +23,20 @@ public class FragmentListado extends Fragment {
             new Libro("Autor1", "Titulo1", 1989),
             new Libro("Autor2", "Titulo2", 1959),
             new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
+            new Libro("Autor3", "Titulo3", 1979),
             new Libro("Autor4", "Titulo4", 1919)
     };
 
@@ -65,9 +79,9 @@ public class FragmentListado extends Fragment {
             TextView lbl_titulo = (TextView) item.findViewById(R.id.lbl_titulo);
             lbl_titulo.setText(datos[position].getTitulo());
             TextView lbl_autor = (TextView) item.findViewById(R.id.lbl_autor);
-            lbl_autor.setText(datos[position].getTitulo());
+            lbl_autor.setText(datos[position].getAutor());
             TextView lbl_anio = (TextView) item.findViewById(R.id.lbl_anio);
-            lbl_anio.setText(datos[position].getTitulo());
+            lbl_anio.setText(String.valueOf(datos[position].getAnio()));
 
             return item;
         }

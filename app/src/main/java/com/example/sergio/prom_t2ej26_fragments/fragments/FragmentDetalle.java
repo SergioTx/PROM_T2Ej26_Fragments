@@ -21,6 +21,9 @@ public class FragmentDetalle extends Fragment {
         return inflater.inflate(R.layout.fragment_detalle, container,false);
     }
 
+    /*
+     * para futuros problemas, mejor pasar un objeto libro y de ahí recoger los Strings
+     */
     public void mostrarDetalle(String texto){
         TextView txt_detalle = (TextView) getView().findViewById(R.id.txt_detalle);
         txt_detalle.setText(texto);
